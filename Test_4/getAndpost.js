@@ -3,6 +3,7 @@ var mongoose = require("mongoose");
 
 var foodSchema = mongoose.Schema(
   {
+    // กำหนด ชื่อและชนิดของ document เรา
     userID: {
       type: String
     },
