@@ -3,7 +3,6 @@ var mongoose = require("mongoose");
 
 var foodSchema = mongoose.Schema(
   {
-    // กำหนด ชื่อและชนิดของ document เรา
     userID: {
       type: String
     },
@@ -20,6 +19,5 @@ var foodSchema = mongoose.Schema(
   
 );
 
-// ถ้าไม่ได้กำหนด collection ข้างบน default จะเป็น "foods"
 var Info = mongoose.model("info", foodSchema);
 module.exports = Info;
